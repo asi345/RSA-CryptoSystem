@@ -7,6 +7,9 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F511545323D61D4400BAACBC /* BigMath.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F511545123D61D4400BAACBC /* BigMath.cpp */; };
+		F55169C623D509F600F6D14F /* BigInt.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F55169C423D509F600F6D14F /* BigInt.cpp */; };
+		F5C6DA1123DA1EC7008AE22B /* RSA.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5C6DA0F23DA1EC7008AE22B /* RSA.cpp */; };
 		F5FACE6423D3BD670001D24B /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = F5FACE6323D3BD670001D24B /* main.cpp */; };
 /* End PBXBuildFile section */
 
@@ -23,6 +26,12 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		F511545123D61D4400BAACBC /* BigMath.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BigMath.cpp; sourceTree = "<group>"; };
+		F511545223D61D4400BAACBC /* BigMath.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BigMath.hpp; sourceTree = "<group>"; };
+		F55169C423D509F600F6D14F /* BigInt.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = BigInt.cpp; sourceTree = "<group>"; };
+		F55169C523D509F600F6D14F /* BigInt.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = BigInt.hpp; sourceTree = "<group>"; };
+		F5C6DA0F23DA1EC7008AE22B /* RSA.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = RSA.cpp; sourceTree = "<group>"; };
+		F5C6DA1023DA1EC7008AE22B /* RSA.hpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.h; path = RSA.hpp; sourceTree = "<group>"; };
 		F5FACE6023D3BD670001D24B /* RSA CryptoSystem */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = "RSA CryptoSystem"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F5FACE6323D3BD670001D24B /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -58,6 +67,12 @@
 			isa = PBXGroup;
 			children = (
 				F5FACE6323D3BD670001D24B /* main.cpp */,
+				F55169C423D509F600F6D14F /* BigInt.cpp */,
+				F55169C523D509F600F6D14F /* BigInt.hpp */,
+				F511545123D61D4400BAACBC /* BigMath.cpp */,
+				F511545223D61D4400BAACBC /* BigMath.hpp */,
+				F5C6DA0F23DA1EC7008AE22B /* RSA.cpp */,
+				F5C6DA1023DA1EC7008AE22B /* RSA.hpp */,
 			);
 			path = "RSA CryptoSystem";
 			sourceTree = "<group>";
@@ -119,7 +134,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F55169C623D509F600F6D14F /* BigInt.cpp in Sources */,
 				F5FACE6423D3BD670001D24B /* main.cpp in Sources */,
+				F5C6DA1123DA1EC7008AE22B /* RSA.cpp in Sources */,
+				F511545323D61D4400BAACBC /* BigMath.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

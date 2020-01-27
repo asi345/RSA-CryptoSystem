@@ -7,9 +7,21 @@
 //
 
 #include <iostream>
+#include "BigInt.hpp"
+#include "BigMath.hpp"
+#include "RSA.hpp"
+#include <vector>
+
+using namespace std;
+using namespace BigMath;
 
 int main(int argc, const char * argv[]) {
-    // insert code here...
-    std::cout << "Hello, World!\n";
+    RSA cry(2);
+    BigInt x = intToBigInt(3);
+    cout << "Plaintext is " << x << endl;
+    BigInt y = cry.encrypt(x);
+    cout << "Ciphertext is " << y << endl;
+    BigInt z = cry.decrypt(y);
+    cout << "Decrypted message is " << z << endl;
     return 0;
 }
