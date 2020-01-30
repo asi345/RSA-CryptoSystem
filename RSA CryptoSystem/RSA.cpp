@@ -34,7 +34,7 @@ bool RSA::isPrime(BigInt &x) {
         m = q.first;
         q = divmod(m, two);
     }
-    BigInt a = generateRandomNumber(arc4random() % ((x - one).size - 1) + 1);
+    BigInt a = generateRandomNumber(arc4random() % ((x - one).size - 1) + 2);
     BigInt b = expoMod(a, m, x);
     BigInt c = mod(b, x);
     if (c == 1)
@@ -78,7 +78,7 @@ void RSA::generateExponents() {
         this->firstExponent = generateRandomNumber(arc4random() % (this->phi.size - 1) + 1);
         a = gcd(this->firstExponent, this->phi);
     } while (!(a == 1));
-    this->secondExponent = inverseMod(this->firstExponent, this->n);
+    this->secondExponent = inverseMod(this->firstExponent, this->phi);
 }
 
 BigInt RSA::encrypt(BigInt& x) {

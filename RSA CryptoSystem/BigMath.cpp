@@ -176,13 +176,13 @@ BigInt mod(BigInt& x, BigInt& n) { //x mod n
 BigInt expoMod(BigInt& x, BigInt& y, BigInt& n) { //pow(x, y) mod n
     string binary = "";
     int rem;
-    BigInt two = intToBigInt(2);
+    BigInt two = intToBigInt(2), a = y;
     pair<BigInt, BigInt> q;
-    while (!(y == 0)) {
-        q = divmod(y, two);
+    while (!(a == 0)) {
+        q = divmod(a, two);
         rem = BigIntToInt(q.second);
         binary = to_string(rem) + binary;
-        y = q.first;
+        a = q.first;
     }
     BigInt z = intToBigInt(1);
     for (unsigned long long int i = 0; i < binary.size(); i++) {
